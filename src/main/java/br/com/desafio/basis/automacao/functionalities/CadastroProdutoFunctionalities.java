@@ -25,7 +25,7 @@ public class CadastroProdutoFunctionalities {
 	public void clicarBotaoAdicionar() {
 		cadastroProdutoPage.getBotaoAdicionar().click();
 	}
-	
+
 	public String retornarTabelaNome() {
 		return cadastroProdutoPage.getConteudoTabelaNomeProduto().getText();
 	}

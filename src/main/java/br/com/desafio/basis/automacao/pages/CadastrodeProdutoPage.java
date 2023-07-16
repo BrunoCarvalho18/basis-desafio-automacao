@@ -7,31 +7,26 @@ import br.com.desafio.basis.automacao.core.BasePage;
 import br.com.desafio.basis.automacao.core.Driver;
 
 public class CadastrodeProdutoPage extends BasePage {
-	
-	
+
 	public CadastrodeProdutoPage() {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
-	
+
 	@FindBy(id = "inputNome")
 	WebElement campoNomeDoProduto;
-	
+
 	@FindBy(id = "inputPreco")
 	WebElement campoPreco;
-	
+
 	@FindBy(id = "inputValidade")
 	WebElement campoValidade;
-	
+
 	@FindBy(css = "button[class='btn btn-primary']")
 	WebElement botaoAdicionar;
-	
-	
 
 	@FindBy(css = "#conteudoTabela > tr > td:nth-child(2)")
 	WebElement conteudoTabelaNomeProduto;
-	
-	
-	
+
 	public WebElement getCampoNomeDoProduto() {
 		return campoNomeDoProduto;
 	}
@@ -59,12 +54,11 @@ public class CadastrodeProdutoPage extends BasePage {
 	public WebElement getBotaoAdicionar() {
 		return botaoAdicionar;
 	}
-	
+
 	public void setBotaoAdicionar(WebElement botaoAdicionar) {
 		this.botaoAdicionar = botaoAdicionar;
 	}
 
-	
 	public WebElement getConteudoTabelaNomeProduto() {
 		return conteudoTabelaNomeProduto;
 	}
@@ -72,7 +66,5 @@ public class CadastrodeProdutoPage extends BasePage {
 	public void setConteudoTabelaNomeProduto(WebElement conteudoTabelaNomeProduto) {
 		this.conteudoTabelaNomeProduto = conteudoTabelaNomeProduto;
 	}
-
-	
 
 }

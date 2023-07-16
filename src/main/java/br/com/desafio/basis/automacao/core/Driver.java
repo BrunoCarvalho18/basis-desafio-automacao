@@ -20,21 +20,20 @@ public class Driver {
 
 	}
 
-	//Configuracao Driver
+	// Configuracao Driver
 	public static WebDriver getDriver() {
 
-		
-        //Configurar para windows
+		// Configurar para windows
 		if (eWindows()) {
 			System.setProperty("webdriver.chrome.driver",
-				    System.getProperty("user.dir") + "/src/main/resources/webdriver/chromedriver.exe");
+					System.getProperty("user.dir") + "/src/main/resources/webdriver/chromedriver.exe");
 		}
 
 		if (driver == null) {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");
 			driver = new ChromeDriver(options);
-			
+
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			driver.manage().window().maximize();
 		}
@@ -42,8 +41,8 @@ public class Driver {
 		return driver;
 
 	}
-	
-    // Encerrar driver
+
+	// Encerrar driver
 	public static WebDriver encerraDriver() {
 		if (driver != null) {
 			driver.quit();
