@@ -18,5 +18,5 @@
 
 - Page Factory
 
-## 😄 **Results**
+## 😄 **Resultados**
 ![Nova Imagem](https://github.com/BrunoCarvalho18/basis-desafio-automacao/assets/32099971/50d05d40-3d73-4328-8d7e-47246ab3c870)
