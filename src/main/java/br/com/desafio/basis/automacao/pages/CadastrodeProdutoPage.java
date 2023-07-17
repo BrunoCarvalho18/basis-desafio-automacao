@@ -27,6 +27,13 @@ public class CadastrodeProdutoPage extends BasePage {
 	@FindBy(css = "#conteudoTabela > tr > td:nth-child(2)")
 	WebElement conteudoTabelaNomeProduto;
 
+	@FindBy(css = "#form > div:nth-child(2) > div")
+	WebElement labelPrecoInvalido;
+	
+	@FindBy(css = "#form > div:nth-child(3) > div")
+	WebElement labelValidadeInvalida;
+
+
 	public WebElement getCampoNomeDoProduto() {
 		return campoNomeDoProduto;
 	}
@@ -65,6 +72,22 @@ public class CadastrodeProdutoPage extends BasePage {
 
 	public void setConteudoTabelaNomeProduto(WebElement conteudoTabelaNomeProduto) {
 		this.conteudoTabelaNomeProduto = conteudoTabelaNomeProduto;
+	}
+	
+	public WebElement getLabelPrecoInvalido() {
+		return labelPrecoInvalido;
+	}
+
+	public void setLabelPrecoInvalido(WebElement labelPrecoInvalido) {
+		this.labelPrecoInvalido = labelPrecoInvalido;
+	}
+	
+	public WebElement getLabelValidadeInvalida() {
+		return labelValidadeInvalida;
+	}
+
+	public void setLabelValidadeInvalida(WebElement labelValidadeInvalida) {
+		this.labelValidadeInvalida = labelValidadeInvalida;
 	}
 
 }

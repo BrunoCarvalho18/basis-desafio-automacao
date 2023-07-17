@@ -29,5 +29,13 @@ public class CadastroProdutoFunctionalities {
 	public String retornarTabelaNome() {
 		return cadastroProdutoPage.getConteudoTabelaNomeProduto().getText();
 	}
+	
+	public String labelPrecoInvalido() {
+		return cadastroProdutoPage.getLabelPrecoInvalido().getText();
+	}
+	
+	public String labelValidadeInvalida() {
+		return cadastroProdutoPage.getLabelValidadeInvalida().getText();
+	}
 
 }
