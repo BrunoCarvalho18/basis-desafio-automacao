@@ -19,8 +19,8 @@ Exemplos:
 |Oleo           | 15            | 15/01/2022  |
 
 
-@cadastroproduto
-Esquema do Cenario: Cadastro um Produto menor que 0
+@cadastroprodutopreco
+Esquema do Cenario: Cadastro um Produto preco menor que 0
        Dado que eu esteja logado na pagina
        Quando preencho com os campos "<nomeProduto>"  "<preco>"  "<validade>"
        Entao o produto nao e cadastrado com sucesso "<labelinvalida>" preco invalido
@@ -30,7 +30,7 @@ Exemplos:
 |Arroz          | -1            | 01/01/2022  | Preço invalido   | 
 
 
-@cadastroproduto
+@cadastroprodutovalidade
 Esquema do Cenario: Cadastro um Produto validade invalida
        Dado que eu esteja logado na pagina
        Quando preencho com os campos "<nomeProduto>"  "<preco>"  "<validade>"
