@@ -8,7 +8,7 @@ Funcionalidade: Cadastrar Produto
                 de cadastrar produto
 
 @cadastroproduto
-Esquema do Cenario: Cadastro um Produto
+Esquema do Cenario: Cadastrar um Produto
        Dado que eu esteja logado na pagina
        Quando preencho com os campos "<nomeProduto>"  "<preco>"  "<validade>"
        Entao o produto e cadastro com sucesso "<nomeProduto>"
@@ -20,7 +20,7 @@ Exemplos:
 
 
 @cadastroprodutopreco
-Esquema do Cenario: Cadastro um Produto preco menor que 0
+Esquema do Cenario: Cadastrar um Produto preco menor que 0
        Dado que eu esteja logado na pagina
        Quando preencho com os campos "<nomeProduto>"  "<preco>"  "<validade>"
        Entao o produto nao e cadastrado com sucesso "<labelinvalida>" preco invalido
@@ -31,7 +31,7 @@ Exemplos:
 
 
 @cadastroprodutovalidade
-Esquema do Cenario: Cadastro um Produto validade invalida
+Esquema do Cenario: Cadastrar um Produto validade invalida
        Dado que eu esteja logado na pagina
        Quando preencho com os campos "<nomeProduto>"  "<preco>"  "<validade>"
        Entao o produto nao e cadastrado com sucesso "<labelinvalida>" validade invalida
